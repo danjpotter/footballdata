@@ -35,12 +35,3 @@ class Referee(Person):
 
 class Manager(Person):
     pass
-
-
-class Position(models.Model):
-    def __str__(self):
-        return self.code
-
-    name = models.CharField(max_length=20)
-    code = models.CharField(max_length=3)
-    sort_order = models.SmallIntegerField()
